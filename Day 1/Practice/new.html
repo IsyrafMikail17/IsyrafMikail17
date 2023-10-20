@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+        
+        .box::before {
+            content: 'BEFORE';
+            position: absolute;
+            top: -20px;
+            left: 0;
+            background-color: lightcoral;
+        }
+        
+        .box::after {
+            content: 'AFTER';
+            position: absolute;
+            bottom: -20px;
+            right: 0;
+            background-color: lightgreen;
+        }
+
+        .intro::first-line {
+            font-weight: bold;
+            color: blue;
+        }
+
+        .highlight-letter::first-letter {
+            font-size: 2em;
+            font-weight: bold;
+            color: red;
+        }
+
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+        
+        input[type="password"] {
+            border: 2px solid red;
+        }
+
+        ::selection {
+            background-color:brown;
+            color:white;
+        }
+
+        ::placeholder {
+            color:red;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+  
+    <br>
+    <br>
+    <br>
+    <a href="/">Home</a>
+    <hr>
+    <div class="box"> This is my First Quote</div>
+
+
+
+    <h1> This is my new file</h1>
+
+    <p class="highlight-letter">Once upon a time in a faraway land...</p>
+
+    
+
+    <p class="intro">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste at maxime quod! Aperiam eos voluptatem voluptates ab velit facere et accusantium. Porro eos fugiat dicta quaerat alias suscipit libero nemo dolor veritatis sapiente fugit, delectus aliquid reiciendis inventore, temporibus voluptatum saepe ad atque error. Nemo commodi voluptate facere quia delectus praesentium fuga voluptatibus temporibus ab dolorem? Culpa assumenda dolores beatae dolor! Obcaecati odio laudantium error illum ipsam placeat exercitationem, quam nesciunt dolore voluptates laboriosam commodi dolorem! Ipsum rerum voluptates nesciunt reiciendis rem. Id dolorum harum vitae veniam dignissimos perspiciatis inventore rerum nihil omnis repellat optio incidunt, minus molestias, esse possimus beatae facere impedit velit fugit laudantium quibusdam temporibus necessitatibus? Quasi impedit voluptatibus esse deleniti laboriosam reprehenderit perspiciatis nisi praesentium suscipit, rerum voluptatum molestiae modi necessitatibus pariatur enim placeat nobis! Optio dolores necessitatibus ducimus neque quod fugiat dolor esse deserunt ea minus voluptatem cupiditate id illo, architecto omnis eos magnam ex, fugit saepe laudantium voluptates reprehenderit doloribus expedita laboriosam! Est necessitatibus voluptates enim at esse distinctio similique sit nulla. Laborum, nulla? Libero sit beatae necessitatibus vel aut explicabo aperiam dolore facilis! Quisquam labore totam praesentium culpa quidem consequatur consequuntur, velit in quod numquam sunt ad impedit soluta illo obcaecati corporis? Nihil, culpa eveniet minima rem quaerat assumenda voluptatibus sequi id ipsum suscipit illum, cumque, a error perferendis modi totam vitae laborum inventore aspernatur ipsam odit cupiditate expedita. Ratione, amet. Debitis non ad quia molestiae dignissimos quam, magni autem modi fugiat. Pariatur neque hic architecto, a ea magnam necessitatibus quos saepe reprehenderit ex, maiores omnis quod? Molestiae numquam praesentium dolor corporis quibusdam maxime sed, ipsam deserunt! Distinctio culpa explicabo, totam veniam eaque laboriosam unde, saepe architecto assumenda incidunt ipsum consequatur quam odio voluptatibus expedita, vitae quas eum atque aliquam quidem. Quia error vel ducimus facere architecto dolores fuga dignissimos distinctio velit animi.
+        This is a longer paragraph to demonstrate the first-line pseudo-element. Resize your browser window to see how the first line adjusts.</p>
+
+        <input type="text" placeholder="Username">
+<input type="password">
+
+
+<input type="text" placeholder="Enter your name">
+
+</body>
+</html>
