@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of Storage</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+
+    #pagecolor{ color:black}
+</style>
+</head>
+<body>
+    <div id="pagecolor">
+    
+    What is your color choice?
+    <input type="color" name="mytext" id="mytext">
+
+    
+
+<button id="saveButton"> Save</button>
+<br><br><br><br>
+
+<div id="yourname"> </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#saveButton').click(function() {
+                var data = $('#mytext').val();
+                $('#yourname').html(data);
+                localStorage.setItem('mycolor', data);
+            });
+        });
+
+
+        function getData()
+        {
+            var data = localStorage.getItem('mycolor');
+            console.warn(data)
+$("#pagecolor").css("color",data);
+            $('#yourname').text("Welcome back "+data);  
+
+        }
+
+        getData();
+
+
+    </script>
+</div>
+</body>
+</html>

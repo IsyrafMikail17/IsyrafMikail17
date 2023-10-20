@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class BankAccount {
+
+            #balance = 2000; // Private field
+        
+            deposit(amount) {
+                this.#balance += amount;
+                console.log(`Deposited ${amount}. Current balance: ${this.#balance}`);
+            }
+        
+            withdraw(amount) {
+                if (amount > this.#balance) {
+                    console.log("Insufficient funds");
+                    return;
+                }
+                this.#balance -= amount;
+                console.log(`Withdrew ${amount}. Current balance: ${this.#balance}`);
+            }
+
+            getBalance()
+            {
+                let tempbalance=this.#balance+50000;
+              console.log("Your balance is : "+tempbalance);
+            }
+            
+        }
+        
+
+class myBankAccount extends BankAccount
+{
+
+    constructor()
+    {
+        super();
+this.name="Zareef";
+this.balance=this.getBalance();
+    }
+
+ 
+}
+        let account = new myBankAccount();
+        account.deposit(100);  // Outputs: Deposited 100. Current balance: 100
+        account.withdraw(50);  // Outputs: Withdrew 50. Current balance: 50
+        account.getBalance();  
+        account.deposit(75); 
+        account.withdraw(8000);    
+        
+    </script>
+</body>
+</html>

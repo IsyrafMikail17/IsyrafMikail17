@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language="javascript">
+
+        class Car {
+            constructor(brand, model) {
+                this.brand = brand;
+                this.model = model;
+            }
+        
+            displayDetails() {
+                console.log(`This car is a ${this.brand} ${this.model}.`);
+            }
+        }
+        
+      //  let myCar = new Car("Toyota", "Corolla");
+      //  myCar.displayDetails(); // Outputs: This car is a Toyota Corolla.
+    
+    
+      class Vehicle {
+        constructor(type) {
+            this.type = type;
+        }
+    
+        describe() {
+            console.log("I am being claled from Vehicle");
+            console.log(`This is a ${this.type}.`);
+        }
+    }
+    
+    class Bike extends Vehicle {
+        constructor(brand, model) {
+            super("Bike");
+            this.brand = brand;
+            this.model = model;
+        }
+    
+        displayDetails() {
+            console.log(`This bike is a ${this.brand} ${this.model}.`);
+        }
+    }
+    
+ let myvehicle= new Vehicle("Car");
+ myvehicle.describe();
+ 
+
+    let myBike = new Bike("Yamaha", "MT-07");
+    myBike.describe();       // Outputs: This is a Bike.
+    myBike.displayDetails(); // Outputs: This bike is a Yamaha MT-07.
+
+
+    
+    </script>
+</body>
+</html>

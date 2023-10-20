@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Example</title>
+   <link rel="stylesheet" href="styles_assignment2.css">
+</head>
+<body>
+<div class="container">
+<div class="header"> I am Header
+
+    <div id="lastlogin"></div>
+</div>
+<div class="navigation">
+    <a href=""> Link 1</a>
+    <a href=""> Link 1</a>
+    <a href=""> Link 1</a>
+    <a href=""> Link 1</a>
+
+</div>
+<br><br><br><br><br><br>
+<div class="footer"> I am footer</div>
+</div>
+
+<script>
+
+    function saveLastLogin()
+    {
+        let date = new Date();
+        console.warn(date);
+        localStorage.setItem('lastlogin', date);
+    }
+    
+    function getLastLogin(){
+
+        let date =localStorage.getItem("lastlogin");
+        let elemlastlogin= document.getElementById("lastlogin");
+        elemlastlogin.innerHTML="Your last visit was on :"+ date;
+        console.log(elemlastlogin);
+        console.warn(date);
+        
+    }
+
+    saveLastLogin();
+    getLastLogin();
+
+</script>
+</body>
+</html>

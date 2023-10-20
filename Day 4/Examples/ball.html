@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive SVG with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <circle id="myCircle" cx="100" cy="100" r="100" fill="rgb(254.24324,100.234324,100.34344)" />
+</svg>
+
+<script>
+    $(document).ready(function() {
+        $('#myCircle').on('click', function() {
+            /*
+            let colors = ['red', 'blue', 'green', 'yellow', 'purple'];
+           // let color
+            let currentColor = $(this).attr('fill');
+            let newColor = colors[(colors.indexOf(currentColor) + 1) % colors.length];
+           */
+            // Let's define a new randong color, Dynamically
+           console.log(randomNumber(0,100));
+           r=randomNumber(0,255);
+           g=randomNumber(0,255);
+           b=randomNumber(0,255);
+            newColor="rgb("+r+","+g+","+b+")";
+            $(this).attr('fill', newColor);
+        });
+    });
+
+
+    function randomNumber(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+</script>
+
+</body>
+</html>

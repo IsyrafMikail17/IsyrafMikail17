@@ -1,0 +1,52 @@
+      /* Base styles (applied by default) */
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color:red;
+        background-image: url("image1.jpg");
+        text-align: center;
+    }
+    
+    h1 {
+        color: #333;
+    
+    }
+    
+    p {
+        color: #666;
+        
+    }
+    
+    /* Media query for desktop screens */
+    @media screen and (min-width: 768px) {
+        .container {
+           /* background-color:green; */
+            background-image: url("image3.jpg");
+        }
+    
+        h1 {
+            color: #111;
+        }
+    
+        p {
+            color: #444;
+        }
+    }
+    
+    /* Media query for mobile screens */
+    @media screen and (max-width: 767px) {
+        .container {
+            /*background-color: blue;
+            */
+            background-image: url("image2.jpg");
+        }
+    
+        h1 {
+            color: #555;
+        }
+    
+        p {
+            color: #888;
+        }
+    } 

@@ -1,0 +1,23 @@
+      /* Base styles (applied by default) */
+      .container {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+      
+        text-align: center;
+    }
+    
+.header {}
+.footer {}
+.navigation {float:left}
+a {display: block;}
+.lastlogin {float:right}    
+    /* Media query for mobile screens */
+    @media screen and (max-width: 767px) {
+        
+
+        .navigation {float:left}
+        .footer{visibility: hidden;}
+    
+    } 

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        aside {
+            width: 20%;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        aside a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        main {
+            width: 80%;
+            float: left;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            aside, main {
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to My Homepage
+    </header>
+
+    <nav>
+        <a href="#">Privacy</a>
+        <a href="#">Contact Me</a>
+        <a href="#">About Me</a>
+    </nav>
+
+    <aside>
+        <a href="#">Sample Link 1</a>
+        <a href="#">Sample Link 2</a>
+        <a href="#">Sample Link 3</a>
+    </aside>
+
+    <main>
+        <article>
+            <h2>Sample Article 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet sem vitae lorem cursus molestie.</p>
+        </article>
+        <article>
+            <h2>Sample Article 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet sem vitae lorem cursus molestie.</p>
+        </article>
+    </main>
+
+    <footer>
+        Copyright &copy; 2023
+    </footer>
+</body>
+</html>
